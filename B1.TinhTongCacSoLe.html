@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var num = [21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11];
+    var total = 0;
+
+    function totalOdd(num) {
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] % 2 != 0) {
+                total += num[i];
+            }
+        }
+        return total;
+    }
+
+    result = totalOdd(num);
+    document.write("tong cac so le = " + result);
+</script>
+</html>

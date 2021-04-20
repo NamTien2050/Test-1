@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+
+
+    function checkNumPerfect(number) {
+        let sum = 0
+        for (let i = 1; i < number; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+        if (sum == number) {
+            return true;
+        }
+        return false;
+    }
+
+    function positionDisplay(array) {
+        let count = 0
+        for (let j = 0; j < array.length; j++) {
+            if (checkNumPerfect(array[j]) == true) {
+                document.write(array[j] + " o vi tri thu " + j + " la SHH" + "<br>")
+                count++;
+            }
+        }
+        if (count == 0) {
+            alert("KO CO SO HOAN HAO")
+        }
+    }
+    let num = [1, 2, 6, 28, 32, 83]
+    positionDisplay(num);
+
+</script>
+</html>

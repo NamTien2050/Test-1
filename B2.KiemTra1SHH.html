@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let num = +prompt("nhap vao");
+
+    function checkNumPerfect(num) {
+        let sum = 0
+        for (let i = 0; i < num; i++) {
+            if (num % i == 0) {
+                sum += i;
+            }
+        }
+        if (sum == num) {
+            return true;
+        }
+        return false;
+    }
+
+    result = checkNumPerfect(num);
+    if (result) {
+        document.write(num + " la SHH");
+    } else
+        document.write(num + " khong phai SHH")
+</script>
+</html>
